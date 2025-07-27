@@ -7,7 +7,7 @@ Nome do Projeto:
   O MaqSync é um sistema de gerenciamento e utilização de dispositivos automatizados (como ESP32, Raspberry Pi, Arduino e similares). 
   Com foco em escalabilidade e controle, ele oferece um ambiente completo de gestão de usuários, operações em máquinas, controle financeiro e suporte técnico.
 
-# Problema que Resolve: 
+# Detalhamentos: 
   Centraliza o controle simples no uso de máquinas automatizadas, evitando perda de informações, falhas de segurança e dificuldades de suporte.
 Público-Alvo Empresas e desenvolvedores que desejam automatizar máquinas em ambientes controlados com diferentes níveis de acesso.
 Objetivo Geral Desenvolver uma solução multiplataforma (frontend + backend + dispositivos) para controle completo de máquinas automatizadas, com acesso segmentado por tipo de conta.
