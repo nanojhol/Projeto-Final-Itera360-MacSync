@@ -1,0 +1,87 @@
+.filtros {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+
+.input_busca {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.botao_limpar {
+  width: 1rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  color: #282A2C;
+  border: none;
+  background: transparent;
+}
+
+.botao_icone {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #273240B5;
+}
+.botao_icone svg:hover {
+  color: #f08830;
+}
+
+.botao_editar {
+  color: #273240B5;
+}
+.botao_editar svg:hover {
+  color: #f08830;
+}
+
+.botao_deletar {
+  border: none;
+  background: none;
+  color: #273240B5;
+}
+.botao_deletar svg:hover {
+  color: #e4504b;
+}
+
+.card_estabelecimento {
+  background: #002fff07;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 0.1px solid transparent;
+}
+.card_estabelecimento:hover {
+  transform: scale(1.03);
+}
+.card_estabelecimento h5 {
+  margin: 0 0 10px;
+}
+.card_estabelecimento span {
+  font-weight: bold;
+}
+
+.ativo {
+  border-color: #1a3288;
+}
+
+.inativo {
+  border-color: #e630308f;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagina_conteudo {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}

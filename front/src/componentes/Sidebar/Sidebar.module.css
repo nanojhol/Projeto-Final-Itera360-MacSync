@@ -1,0 +1,320 @@
+.sidebar_conteudo {
+  background-color: #1f2937;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 1rem;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+}
+
+.sidebar_conteudo.expandida {
+  width: 220px;
+}
+
+.sidebar_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 100px;
+  transition: all 0.3s ease;
+}
+
+.sidebar_corpo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.sidebar_item {
+  display: flex;
+  align-items: center;
+  color: #f9fafb;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  gap: 16px; 
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar_item:hover {
+  background-color: #374151;
+  cursor: pointer;
+}
+
+.sidebar_item_icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.sidebar_item_texto {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateX(-10px);
+  display: inline-block;
+}
+
+
+.sidebar_conteudo.expandida .sidebar_item_texto {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.pagina_conteudo {
+  margin-left: 80px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar_conteudo.expandida ~ .pagina_conteudo {
+  margin-left: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+/* .sidebar_conteudo {
+  background-color: #1f2937;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+}
+
+.sidebar_conteudo:hover {
+  width: 220px;
+}
+
+.sidebar_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+} */
+
+/* .logo {
+  width: 50px;
+  transition: all 0.3s ease;
+} */
+
+/* .sidebar_corpo {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-left: 0.5rem;
+} */
+
+/* .sidebar_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #f9fafb;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  gap: 1rem;
+  font-size: 1rem;
+} */
+
+/* .sidebar_item:hover {
+  background-color: #374151;
+  cursor: pointer;
+} */
+
+/* .sidebar_item_icon {
+  font-size: 2rem; 
+  min-width: 40px;
+  text-align: center;
+} */
+
+/* .sidebar_item_texto {
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+} */
+
+/* Quando hover na sidebar, mostrar o texto */
+/* .sidebar_conteudo:hover .sidebar_item_texto {
+  opacity: 1;
+  transform: translateX(0);
+} */
+
+/* conteúdo principal se ajusta com hover */
+/* .pagina_conteudo {
+  margin-left: 80px;
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar_conteudo:hover ~ .pagina_conteudo {
+  margin-left: 220px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* .sidebar_conteudo {
+  background-color: #1f2937;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  transition: width 0.3s ease;
+}
+
+.sidebar_conteudo:hover {
+  width: 200px;
+}
+
+.sidebar_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 50px;
+  transition: all 0.3s ease;
+}
+
+.sidebar_corpo {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #f9fafb;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  gap: 1rem;
+}
+
+.sidebar_item:hover {
+  background-color: #374151;
+  cursor: pointer;
+}
+
+.sidebar_item_icon {
+  font-size: 1.5rem;
+  min-width: 30px;
+  text-align: center;
+}
+
+.sidebar_item_texto {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar_conteudo:hover .sidebar_item_texto {
+  opacity: 1;
+}
+
+.pagina_conteudo {
+  margin-left: 80px;
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar_conteudo:hover ~ .pagina_conteudo {
+  margin-left: 200px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* .sidebar_conteudo {
+  background-color: #070b3b;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.pagina_conteudo {
+  margin-left: 20%;
+}
+
+.sidebar_header {
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  margin: -10px;
+  margin-top: -20%;
+}
+
+.linha {
+  color: rgba(250, 234, 214, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    content: url("../../assets/Logo2.png");
+    margin-top: -5rem;
+  }
+
+   .sidebar_conteudo {
+    width: 5rem;
+  }
+
+  .pagina_conteudo {
+    margin-left: 5rem;
+  }
+}  */

@@ -1,0 +1,106 @@
+.botao_novo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+
+  background-color: #291c65;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+
+  width: fit-content;
+  height: 48px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.botao_novo:hover {
+  background-color: #1bdbc1;
+  transform: translateY(-2px);
+}
+
+.botao_novo:active {
+  transform: scale(0.98);
+}
+
+.icone {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.texto {
+  display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+  .botao_novo {
+    width: 48px;
+    padding: 12px;
+    justify-content: center;
+  }
+
+  .icone {
+    margin-right: 0;
+  }
+
+  .texto {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* .botao_novo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  width: 161px;
+  height: 44.89px;
+  background-color: #ED8731;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.icone {
+  margin-right: 26px;
+}
+
+.texto {
+  display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+  .botao_novo {
+    width: 44.89px;
+    justify-content: center;
+    padding: 10px; /* menor padding para botão mais compacto */
+  /* }
+
+  .icone {
+    margin-right: 0;
+  }
+
+  .texto {
+    display: none;
+  } */
+/* } */ 

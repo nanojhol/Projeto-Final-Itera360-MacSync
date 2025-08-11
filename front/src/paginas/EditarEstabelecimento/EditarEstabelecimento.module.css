@@ -1,0 +1,120 @@
+.pagina_conteudo {
+    width: 100%;
+    height: 100%;
+    padding: 3.125rem;
+}
+
+.pagina_cabecalho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.datas_container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 1rem;
+    width: 100%;
+}
+
+.data_input {
+    flex: 1;
+}
+
+.input_wrapper {
+    position: relative;
+}
+
+.clear_button {
+    position: absolute;
+    right: 0.625rem;
+    /* 10px */
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    /* 16px */
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.clear_button:hover {
+    color: #000;
+}
+
+.form_container {
+    width: 50%;
+    margin: 0;
+}
+
+.botao_salvar {
+    margin-top: 2rem;
+    width: 25%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 2rem
+}
+
+@media only screen and (max-width: 768px) {
+    .pagina_conteudo {
+        padding: 1rem;
+    }
+
+    .pagina_cabecalho {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filtros2 .form-group {
+        width: 100%;
+    }
+
+    .datas_container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form_container {
+        width: 100%;
+    }
+}
+
+
+.filtros {
+    display: flex;
+}
+
+.filtros2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.filtros2 .form-group {
+    width: 48%;
+}
+
+.botao_limpar {
+    width: 1.5rem;
+    /* 24px */
+    height: 1.5rem;
+    /* 24px */
+    margin-left: -2rem;
+    /* mantido percentual */
+    margin-right: -2rem;
+    /* mantido percentual */
+    padding: 0.3125rem 0 0 0;
+    /* 5px 0px 0px 0px */
+    gap: 0.625rem;
+    /* 10px — atenção: `gap` só funciona em flex/grid */
+    color: #282A2C;
+    border: none;
+    background: transparent;
+}

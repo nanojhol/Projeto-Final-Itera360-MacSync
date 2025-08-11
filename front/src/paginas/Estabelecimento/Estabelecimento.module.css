@@ -1,0 +1,211 @@
+.filtros {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-Top: 21px;
+}
+
+.botao_limpar {
+    width: 1rem;
+    height: 2.5rem;
+    margin-top: -0.0rem;
+    top: 0.34rem;
+    left: 0.34rem;
+    padding: 0.625rem;
+    gap: 0.625rem;
+    color: #282A2C;
+    border: none;
+    background: transparent;
+}
+
+.botao_icone {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #273240B5;
+    
+    & svg:hover {
+    color: #f08830;
+    }
+}
+
+.tabela {
+    margin-top: 1.690rem;
+}
+
+.input_busca {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.pagina_conteudo {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+
+.pagina_cabecalho {
+    display: flex;
+    justify-content: space-between;
+
+    & .botao_novo {
+        text-decoration: none;
+        color: white;
+
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        border-radius: 10px;
+        background-color: #f08830;
+    }
+}
+
+
+
+
+.tabela_corpo svg {
+    color: #212529;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.botao_editar {
+    color: #273240B5;
+    width: 50px;
+    
+    & svg:hover {
+        color: #f08830;
+    }
+}
+
+.botao_deletar {
+    border: none;
+    background: none;
+    color: #273240B5;
+
+    & svg:hover {
+        color: #e4504b;
+    }
+}
+
+
+
+.cabecalho_tabela_maquinas {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.registros_tabela_maquinas {
+  text-align: right;
+  vertical-align: middle;
+  width: 120px;
+}
+
+.acoes {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 8px; /* Espaço entre os ícones */
+  justify-content: center; /* Opcional, para centralizar na célula */
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .pagina_conteudo {
+        padding: 0.625rem; /* 10px */
+    }
+
+    .pagina_cabecalho {
+        display: flex;
+
+    }
+
+    .botao_novo {
+        margin-top: 0.625rem; /* 10px */
+        margin-right: 0.625rem; /* 10px */
+    }
+
+    .input_busca {
+        max-width: 200px;
+    }
+}
+
+
+.lista_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.card_maquina {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_maquina:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.acoes {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+
+
+
+.cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card_estabelecimento {
+  background: #002fff07;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 0.1px solid transparent;
+}
+
+.card_estabelecimento:hover {
+  transform: scale(1.03);
+}
+
+.card_estabelecimento h5 {
+  margin: 0 0 10px;
+}
+
+.card_estabelecimento span {
+  font-weight: bold;
+}
+
+.ativo {
+  border-color: #1a3288;
+}
+
+.inativo {
+  border-color: #e630308f;
+  cursor: not-allowed;
+  opacity: 0.5;
+}

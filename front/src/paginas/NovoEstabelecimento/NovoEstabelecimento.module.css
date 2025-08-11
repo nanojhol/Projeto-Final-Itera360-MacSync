@@ -1,0 +1,118 @@
+.pagina_conteudo {
+    width: 100%;
+    height: 100%;
+    padding: 3.125rem;
+}
+
+.pagina_cabecalho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.datas_container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 1rem;
+    width: 100%;
+}
+
+.data_input {
+    flex: 1;
+}
+
+.input_wrapper {
+    position: relative;
+}
+
+.clear_button {
+    position: absolute;
+    right: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.clear_button:hover {
+    color: #000;
+}
+
+.form_container {
+    width: 50%;
+    margin: 0;
+}
+
+.botao_salvar {
+    margin-top: 2rem;
+    width: 25%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 2rem
+}
+
+@media only screen and (max-width: 768px) {
+    .pagina_conteudo {
+        padding: 0.625rem;
+    }
+
+    .pagina_cabecalho {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filtros2 .form-group {
+        width: 100%;
+    }
+
+    .datas_container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+.filtros {
+    display: flex;
+}
+
+.filtros2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.filtros2 .form-group {
+    width: 48%;
+}
+
+.botao_limpar {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0.3125rem 0 0 0;
+    gap: 0.625rem;
+    color: #282A2C;
+    border: none;
+    background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .pagina_conteudo {
+        padding: 1rem;
+    }
+
+    .form_container {
+        width: 100%;
+    }
+}
